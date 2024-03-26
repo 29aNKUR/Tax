@@ -68,7 +68,7 @@ function generateReceipt(cart: string[], taxRates: TaxRates, exemptCategories: s
   console.log(`Total: ${totalCost.toFixed(2)}`);
 }
 
-// Example inputs and outputs
+// Example inputs
 const shoppingCarts: string[][] = [
   [
       "1 book at 124.99",
