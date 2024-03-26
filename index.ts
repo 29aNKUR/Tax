@@ -51,7 +51,7 @@ function generateReceipt(cart: string[], taxRates: TaxRates, exemptCategories: s
 
   for (const item of cart) {
       const itemDetails = item.split(" ");
-      const quantity = parseInt(itemDetails[0], 10);
+      const quantity = parseInt(itemDetails[0]);
       const price = parseFloat(itemDetails[itemDetails.length - 1]);
       const name = itemDetails.slice(1, -2).join(" ").toLowerCase();
 

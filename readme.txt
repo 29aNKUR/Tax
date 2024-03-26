@@ -4,4 +4,4 @@
 
 2.Assumptions-
     a. We only have chocolates as Food in the store.
-    b. headache pills as Medicines.
+    b. We only have headache pills as Medicines.

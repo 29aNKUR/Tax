@@ -28,7 +28,7 @@ function generateReceipt(cart, taxRates, exemptCategories) {
     for (var _i = 0, cart_1 = cart; _i < cart_1.length; _i++) {
         var item = cart_1[_i];
         var itemDetails = item.split(" ");
-        var quantity = parseInt(itemDetails[0], 10);
+        var quantity = parseInt(itemDetails[0]);
         var price = parseFloat(itemDetails[itemDetails.length - 1]);
         var name_1 = itemDetails.slice(1, -2).join(" ").toLowerCase();
         var receiptItem = calculateTax({ quantity: quantity, name: name_1, price: price }, taxRates, exemptCategories);
